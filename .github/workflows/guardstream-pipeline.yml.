@@ -1,1 +1,24 @@
+name: GuardStream Core
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  guardstream-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. Сканиране за секрети (пароли, ключове)
+      - name: GuardStream Secret Shield
+        uses: gitleaks/gitleaks-action@v2
+
+      # 2. Статичен анализ на кода (SAST)
+      - name: GuardStream Code Audit
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: p/default
 
