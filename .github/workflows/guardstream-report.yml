@@ -45,3 +45,8 @@ jobs:
           to: lifeweaverlifeweaver@gmail.com, client-email@example.com
           attachments: REPORT.md
           
+      - name: Update Google Sheet Archive
+        run: |
+          curl -X POST https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec \
+          -d "client=${{ github.repository }}&status=Success&date=$(date)"
+          
