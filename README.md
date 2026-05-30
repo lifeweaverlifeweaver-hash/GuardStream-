@@ -1,2 +1,8 @@
-​GuardStream
-Automated DevSecOps pipeline security for modern GitHub workflows. Shift security to the left without sacrificing development velocity.
+# GuardStream | Enterprise DevSecOps Automation
+GuardStream е автоматизирана DevSecOps система за сигурност. Ние пренасяме сигурността "вляво" (Shift-left security), за да откриваме рисковете, преди те да станат реални заплахи.
+
+### Основни функции:
+- 24/7 автоматизиран одит.
+- Незабавни имейл известия при риск.
+- Съвместимост с всякакви CRM и уеб платформи.
+
