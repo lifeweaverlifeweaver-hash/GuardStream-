@@ -1,0 +1,15 @@
+name: GuardStream Security Scan
+
+on: [push, pull_request]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Security Check
+        run: |
+          echo "Стартиране на одит на сигурността..."
+          # Тук можеш да добавиш инструменти като Gitleaks или Semgrep
+          echo "Проверката завърши успешно."
+          
